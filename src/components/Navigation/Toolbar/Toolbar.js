@@ -7,7 +7,9 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 const toolbar = (props) => (
   <header className={classes.Toolbar}>
     <div>MENU</div>
-    <Logo />
+    <div className={classes.Logo}>
+      <Logo />
+    </div>
     <nav>
       <NavigationItems/>
     </nav>
@@ -15,5 +17,3 @@ const toolbar = (props) => (
 );
 
 export default toolbar;
-
-// TODO: Replace placeholders elements with their own components
